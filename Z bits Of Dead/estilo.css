@@ -1,0 +1,323 @@
+body {
+    background-color: rgb(0, 0, 0);
+
+}
+
+
+
+/*INICIO HEADER*/
+header figure img {
+    width: 35%;
+    margin-left: 0%;
+    clip-path: circle();
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: 4em;
+    padding-left: 20%;
+    margin: auto;
+    color: #f31212;
+}
+
+h1 sub {
+    font-size: 3em;
+}
+
+header {
+    display: flex;
+}
+
+/*FIM HEADER*/
+
+/*INICIO NAV*/
+
+#lateral {
+    list-style-type: none;
+    padding: 2vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 1em 5em;
+    border-style: solid;
+    border-color: rgb(255, 0, 0);
+    font-family: Georgia;
+    font-size: 150%;
+}
+
+
+#lateral li {
+    display: inline-block;
+}
+
+#lateral li a {
+    color: white;
+    text-decoration: none;
+    padding: 1vh 18vh;
+    display: block;
+}
+
+#lateral li:hover>a {
+    background-color: rgb(17, 35, 15);
+    border-radius: 1em 5em;
+    color: red;
+
+}
+
+/*FIM NAV*/
+
+h2 {
+    color: rgb(252, 6, 6);
+    border-style: solid;
+    border-radius: 1em;
+    padding: 3vh;
+    text-decoration: none;
+    width: 10em;
+    text-align: center;
+    background-color: rgb(15, 15, 15);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+h2:hover {
+    background-color: rgb(17, 35, 15);
+}
+
+.artigo {
+    margin: 2vw;
+    /*vw largura   vh altura  font em  img width max width*/
+    padding: 2vw;
+    font-size: 2em;
+    background-color: rgb(252, 6, 6);
+    width: 50%;
+}
+
+.artigo img {
+    width: 100%;
+    margin: 5%;
+    padding: auto;
+
+
+}
+
+.artigo:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+
+}
+
+.artigo a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+}
+
+.artigo:hover a {
+    border-radius: 50%;
+    padding: 0.2em;
+}
+
+.filmes {
+    display: flex;
+}
+
+.series {
+    display: flex;
+}
+
+.jogos {
+    display: flex;
+}
+
+.flex {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-image: url(./img/footer1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    border: rgb(0, 0, 0) solid 0.6em;
+}
+
+footer figure {
+    display: flex;
+}
+
+footer figure img {
+    width: 10%;
+    display: inline;
+    margin: auto;
+    clip-path: circle();
+
+}
+
+footer h3 {
+    font-family: georgia;
+    font-size: 1.4em;
+    justify-content: center;
+    color: rgb(255, 0, 0);
+}
+
+footer a {
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 2em;
+    padding: 1vh;
+    color: #f31212;
+    background-color: rgb(255, 255, 255);
+}
+
+hr {
+    border: solid 0.1em rgb(252, 6, 6);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+/* Celulares em paisagem */
+@media screen and (max-width: 576px) {
+    #lateral {
+        padding: 1vh;
+        background-color: rgb(0, 0, 0);
+        border-radius: 1em 5em;
+        border-color: rgb(123, 247, 0);
+    }
+
+    #lateral li a {
+        color: white;
+        padding: 1vh 4vh;
+    }
+
+    h1 {
+        font-size: 3em;
+        padding-left: 10%;
+    }
+
+    h1 sub {
+        font-size: 2em;
+
+    }
+
+    header figure img {
+        width: 50%;
+    }
+
+    h2 {
+        color: rgb(255, 255, 255);
+        border-color: rgb(123, 247, 0);
+        width: 4em;
+    }
+
+    hr{
+        border: solid rgb(123, 247, 0);
+    }
+
+    .artigo {
+        margin: 2vw;
+        padding: 3vw;
+        font-size: 2em;
+        background-color: rgb(123, 247, 0);
+    }
+
+}
+
+/* Tablets em retrato */
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    #lateral {
+        padding: 2vh;
+        background-color: rgb(0, 0, 0);
+        border-radius: 1em 7em;
+        border-color: rgb(9, 199, 247);
+    }
+
+    #lateral li a {
+        color: white;
+        padding: 1vh 6vh;
+    }
+
+    h1 {
+        font-size: 4em;
+        padding-left: 10%;
+    }
+
+    h1 sub {
+        font-size: 2em;
+
+    }
+
+    header figure img {
+        width: 50%;
+    }
+
+    hr{
+        border: solid rgb(9, 199, 247);
+    }
+
+    h2 {
+        color: rgb(255, 255, 255);
+        border-color: rgb(9, 199, 247);
+        width: 4em;
+    }
+
+    .artigo {
+        margin: 2vw;
+        padding: 3vw;
+        font-size: 2em;
+        background-color: rgb(9, 199, 247);
+    }
+
+    hr{
+        border: solid rgb(9, 199, 247);
+    }
+
+    }
+
+
+/* Tablets em paisagem e desktop */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #lateral {
+        border-color: rgb(112, 7, 182);
+        padding: 1vh;
+        font-size: 2em;
+
+    }
+
+    #lateral li a {
+        color: white;
+        padding: 1vh 6vh;
+    }
+
+    h1 {
+        font-size: 3em;
+        padding-left: 5%;
+    }
+
+    header figure img {
+        width: 50%;
+    }
+
+    hr{
+        border: solid rgb(112, 7, 182);
+    }
+
+    h2 {
+        color: rgb(255, 255, 255);
+        border-color: rgb(112, 7, 182);
+        width: 4em;
+    }
+
+    .artigo {
+        margin: 2vw;
+        padding: 3vw;
+        font-size: 1.4em;
+        background-color: rgb(112, 7, 182);
+    }
+
+}
+
+/* Telas maiores */
+@media screen and (min-width: 993px) {}
