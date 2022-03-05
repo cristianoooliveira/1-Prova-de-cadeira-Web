@@ -1,0 +1,141 @@
+h1{
+    background-color: rgb(255, 35, 35);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2.5em;
+}
+
+header img {
+    width: 10%;
+    padding: 1vh 8vh; 
+}
+
+#lateral {
+    list-style-type: none;
+    background-color: rgb(255, 35, 35);
+    border-style: solid;
+    font-family: Georgia;
+    font-size: 120%;
+    margin: 0%;
+}
+
+
+#lateral li {
+    display: inline-block;
+}
+
+#lateral li a {
+    color: white;
+    text-decoration: none;
+    padding: 1vh 4vh;
+    display: block;
+    
+}
+
+#lateral li:hover>a {
+    background-color: rgb(1, 48, 255);
+    border-radius: 10%;
+}
+
+hr{
+    border: solid 1.5em rgb(255, 35, 35);
+    margin-bottom: 2%;
+}
+
+/*sections*/
+main{
+    display: flex; 
+}
+
+main section{
+    background-color: rgb(1, 48, 255);
+    color: rgb(255, 255, 255);
+    padding: 1vh; 
+    display: flex;
+}
+
+main section div{
+    width:35%;
+    margin: 2vh;
+    text-align: justify;
+}
+
+main img{
+    width: 100%;  
+}
+
+main div a{
+    color: rgb(245, 146, 146);
+    font-size: 1em;
+    padding: 30%;
+}
+
+main aside{
+    border: solid 0.3em rgb(255, 35, 35);
+    padding: 10vh;
+    font-size: 1em;
+    text-align:left;
+    margin: 0%;
+    width: 100%;
+}
+
+main aside img{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*fim*/
+footer{
+    background-color: rgb(71, 67, 67);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+h3{
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 1em;
+}
+
+h2{
+    color: rgb(245, 72, 72);
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Celulares em paisagem */
+@media screen and (max-width: 576px) {
+    header img {
+        width: 16.3%;
+        padding: 1vh;
+    }
+
+    main aside{
+        border: solid 0.3em rgb(255, 35, 35);
+        padding: 1vh;
+        text-align: center;
+        font-size: 1em;
+        width: 95%;
+    }
+
+    main section div{
+        background-color: rgb(1, 48, 255);
+        color: rgb(255, 255, 255);
+        padding: 1vh;   
+        margin: 1vh;
+        font-size: 1em;
+        width: 30%;
+        text-align: justify;
+    }
+    
+    main{
+        display: inline;    
+    }
+
+}
+    
+
+
